@@ -3,6 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+.botao-gradiente {
+  background: linear-gradient(45deg, #16A84B, #0A9D40);
+  background-size: 200% 200%;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  animation: mudarCor 3s infinite alternate;
+}
+
+@keyframes mudarCor {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+.botao-gradiente:hover {
+  filter: brightness(1.1);
+}
+
+.fd{
+    height: 400px;
+}
 .hd{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 15px;
@@ -72,44 +98,73 @@ body::-webkit-scrollbar {
     display: none; /* Oculta a barra de rolagem no Chromium (Opera, Chrome, Edge, Safari) */
 }
 header{
-    font-size: 13px;
+    background-color: #F2F2F2;
+    font-size: 12px;
     font-family: 'The Glorious', sans-serif;
     margin-top: 0;  
     padding-top: 0;
-    height: 60px;
+    height: 90px;
     width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .logo{
-    width: 60px;
+    width: 90px;
 }
 .logo2{
     width: 90px;
 }
-.conteiner{
-    display: flex;
-    
-    
-    align-items: center;
-    height: 70vh;
-    width: 100vw;
+.container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background-color: #F2F2F2;
 }
-.d1{
-    padding-left: 60px;
+
+
+
+.left {
+  border-radius: 0 20px 10px 0;
+  height: 510px;
+  width: 40px; /* Apenas uma ponta visível */
+  background-color: #BFBFBF;
 }
-.d2{
-    padding-left: 90px;
+
+.center {
+  padding-top: 30px;
+  height: 100%;
+  text-align: center;
+  width: 80vw; /* Ocupa o centro */
+  background-color: #F2F2F2;
 }
-.titulo{
-    font-family: 'The Glorious', sans-serif;
+.pgm{
+  
 }
-.titu{
-    font-family: 'The Glorious', sans-serif;
-    text-align: center;
-    font-size: 16px;
+.celular{
+  position: relative;
+  width: 800px;
+  top: -20px;
+  left: -300px;
 }
+.fa-circle-check{
+  color: #16A84B;
+}
+
+.right {
+  height: 520px;
+  bottom: 0px;  
+  right: 0px;   
+  color: white;
+  padding: 20px;
+  border-radius: 20px 0 0 10px;
+  width: 40vw; 
+  background-color: #BFBFBF;
+}
+
 
 
 .pai{
@@ -140,6 +195,7 @@ header{
 
 /* Container 1: ocupa 100vh e tem 3 seções horizontais */
 .container1 {
+  background-color: #F2F2F2;
     display: flex;
     width: calc(100vw * 3);
     height: 100vh;
@@ -388,3 +444,660 @@ header{
     text-decoration: none; /* Remove o sublinhado */
             color: #000000; 
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  #orçar{
+    font-size: 13px;
+  }
+
+  .btn-orcamento {
+    font-size: 11px;
+    background: linear-gradient(45deg, #22af20, #028102); /* Gradiente verde forte para verde claro */
+    color: rgb(255, 255, 255); /* Texto branco */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-orcamento:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sites{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.st{
+  position : relative;
+  width: 300px;
+}
+
+
+.boxt{
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  border: 3px solid #A6936F;
+}
+
+
+
+
+
+
+
+/* ESTILOS DA GARAGEM */
+.garagem {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* SHOWROOM (HEADER) */
+.showroom {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.showroom h1 {
+  color: #2d3e50;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.placa {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* CONCESSIONÁRIA (GRID DE ESTATÍSTICAS) */
+.concessionaria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+/* CARROS INDIVIDUAIS */
+.ferrari,
+.porsche,
+.lamborghini,
+.tesla,
+.mustang {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.ferrari:hover,
+.porsche:hover,
+.lamborghini:hover,
+.tesla:hover,
+.mustang:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* MOTOR (NÚMEROS) */
+.motor {
+  color: #2980b9;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+/* ESPECIFICAÇÃO (TEXTOS) */
+.especificacao {
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .garagem {
+      margin: 1rem;
+      padding: 25px 15px;
+  }
+  
+  .showroom h1 {
+      font-size: 2rem;
+      padding: 0 15px;
+  }
+  
+  .concessionaria {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+  }
+}
+
+
+.depoimentos-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f8f9fa;
+}
+
+.card-depoimento {
+  flex: 1;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 25px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.cabecalho-depoimento {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.foto-perfil {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #A6936F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+}
+
+.info-cliente h3 {
+  margin: 0;
+  color: #2d3e50;
+  font-size: 1.1em;
+}
+
+.profissao {
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+.estrelas {
+  color: #FFD700;
+  margin: 10px 0;
+}
+
+.texto-depoimento {
+  color: #34495e;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+/* Scrollbar personalizada */
+.card-depoimento::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-depoimento::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.card-depoimento::-webkit-scrollbar-thumb {
+  background: #A6936F;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .depoimentos-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+}
+
+
+
+
+/* Container principal do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+/* Ícone principal */
+.whatsapp-icon {
+  background-color: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  animation: pulse 2s infinite;
+  transition: all 0.3s ease;
+}
+
+/* Mensagem flutuante */
+.whatsapp-message {
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  white-space: nowrap;
+}
+
+.whatsapp-message::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  border-width: 10px 8px 0;
+  border-style: solid;
+  border-color: white transparent transparent;
+}
+
+/* Animações */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes floatMessage {
+  0% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-40px);
+  }
+}
+
+.show-message {
+  animation: floatMessage 3s ease-out;
+}
+
+/* Efeitos hover */
+.whatsapp-icon:hover {
+  transform: scale(1.1) rotate(15deg);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.fa-whatsapp {
+  color: white;
+  font-size: 32px;
+}
+
+
+/* Remova a largura extendida */
+.container1 {
+  width: 100%!important;
+  flex-direction: column!important;
+}
+
+/* Ajuste dos elementos filhos */
+.loki {
+  width: 100%!important;
+  height: auto!important;
+  scroll-snap-align: none!important;
+}
+
+/* Versão mobile */
+@media (max-width: 768px) {
+  .odin {
+    flex-direction: column!important;
+    text-align: center;
+  }
+  
+  .d1, .d2 {
+    width: 100%!important;
+    margin: 20px 0;
+  }
+  
+  dotlottie-player {
+    margin: 0 auto;
+  }
+}
+
+/* ========== MEDIA QUERY OTIMIZADA ========== */
+@media (max-width: 768px) {
+  /* Header responsivo */
+  header {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    padding: 15px 10px !important;
+    gap: 10px !important;
+    row-gap: 15px !important;
+  }
+
+  header a {
+    flex: 1 1 45% !important;
+    text-align: center !important;
+    margin: 2px 0 !important;
+  }
+
+  /* Ajuste do h2 projetos */
+  #projetos {
+    width: 90% !important;
+    margin: 20px auto !important;
+    padding: 15px !important;
+    font-size: 1.1rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Espaço após loki2 */
+  #loki2 {
+    padding-bottom: 30px !important;
+    margin-bottom: 0 !important;
+  }
+
+  #loki2 .bd {
+    margin-top: 25px !important;
+    padding-top: 25px !important;
+    border-top: 1px solid #ddd !important;
+  }
+
+  /* Ajuste geral dos containers */
+  .loki {
+    padding: 25px 10px !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Espaçamento entre elementos */
+  .odin {
+    gap: 25px !important;
+    margin-top: 15px !important;
+  }
+
+  /* Textos */
+  .tt.titulo {
+    font-size: 1.3rem !important;
+    padding: 0 10px !important;
+    margin: 10px 0 !important;
+  }
+
+  /* Botões */
+  .botao-gradiente {
+    margin: 10px auto !important;
+    display: block !important;
+    width: 90% !important;
+    max-width: 280px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  header a {
+    flex-basis: 100% !important;
+    padding: 8px 0 !important;
+  }
+
+  #projetos {
+    font-size: 1rem !important;
+    margin: 10px auto !important;
+    padding: 10px !important;
+  }
+
+  .loki {
+    padding: 20px 8px !important;
+  }
+
+  .tt.titulo {
+    font-size: 1.1rem !important;
+  }
+
+  .botao-gradiente {
+    font-size: 12px !important;
+    padding: 10px 15px !important;
+  }
+}
+
+/* ========== HEADER MOBILE ========== */
+@media (max-width: 768px) {
+  header {
+    height: 60px !important; /* Altura reduzida pela metade */
+    padding: 5px 10px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .logo {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .menu-mobile {
+    font-size: 1.2rem !important;
+    padding: 8px !important;
+    z-index: 1001 !important;
+  }
+
+  .nav-links {
+    top: 60px !important; /* Acompanha altura do header */
+    padding: 10px !important;
+  }
+
+  .nav-links a {
+    font-size: 14px !important;
+    padding: 8px !important;
+  }
+
+  .botao-gradiente {
+    font-size: 12px !important;
+    padding: 8px 15px !important;
+    margin: 8px auto !important;
+  }
+}
+
+/* ========== ANIMAÇÃO DO MENU ========== */
+.nav-links {
+  transition: all 0.3s ease-in-out !important;
+  transform-origin: top !important;
+}
+
+.nav-links.active {
+  transform: scaleY(1) !important;
+  opacity: 1 !important;
+}
+
+.nav-links:not(.active) {
+  transform: scaleY(0) !important;
+  opacity: 0 !important;
+}
+/* ========== HEADER MOBILE ========== */
+@media (max-width: 768px) {
+  header {
+      height: 70px !important;
+      padding: 0 15px !important;
+      justify-content: space-between !important;
+  }
+
+  .menu-mobile {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      color: var(--cor-texto) !important;
+      z-index: 1001 !important;
+  }
+
+  .nav-links {
+      position: fixed !important;
+      top: 0 !important;
+      left: -100% !important;
+      width: 100% !important;
+      height: 100vh !important;
+      background: rgba(0,0,0,0.95) !important;
+      flex-direction: column !important;
+      padding: 80px 20px 20px !important;
+      gap: 25px !important;
+      transition: all 0.3s ease !important;
+      z-index: 999 !important;
+  }
+
+  .nav-links.active {
+      left: 0 !important;
+  }
+
+  .nav-links a {
+      color: white !important;
+      font-size: 1.2rem !important;
+      padding: 15px !important;
+      width: 100% !important;
+      text-align: center !important;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1) !important;
+  }
+
+  .nav-links .botao-gradiente {
+      width: 90% !important;
+      max-width: 300px !important;
+      margin: 20px auto 0 !important;
+  }
+
+  .logo {
+      width: 70px !important;
+      position: relative !important;
+      z-index: 1001 !important;
+  }
+}
+/* ========== PROCESSO 4 PASSOS MOBILE ========== */
+@media (max-width: 768px) {
+  #ovo {
+      margin-top: 100px !important;
+      padding: 0 15px !important;
+  }
+
+  #ovo > div {
+      flex-direction: column !important;
+      gap: 15px !important;
+  }
+
+  .boxt {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 15px !important;
+  }
+
+  .boxt p {
+      padding: 15px !important;
+      font-size: 14px !important;
+  }
+
+  .boxt i {
+      font-size: 1.5rem !important;
+  }
+}
+.no-scroll {
+  overflow: hidden !important;
+}
+
+
+.puta{
+  font-size: 11px;
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #F2F2F2;
+  
+}
+
+
+
+/* Telas muito pequenas (celulares, 320px para cima) */
+/* Telas muito pequenas (celulares, 320px para cima) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .puta {
+    font-size: 8px;
+    gap: 10px;
+  }
+ #projetos{
+  padding: 20px!important;
+ }
+  /* Remove o h1 clientes */
+  .puta h1:nth-child(3) {
+    display: none !important;
+  }
+
+  .celular {
+    margin-left: 70px; /* Move 50px para a direita */
+  }
+  h2.peste {
+    display: none;
+  }
+  .ovo{
+    margin-top: 200px;
+  }
+  #ovo {
+    margin-top: 700px !important; /* Reduz a margem superior */
+    z-index: 1; /* Garante que fique abaixo dos elementos scrolláveis */
+    position: relative; /* Mantém o fluxo normal do documento */
+  }
+
+  /* Garante que o container loki2 tenha espaço suficiente */
+  .loki:last-child {
+    min-height: calc(100vh - 100px);
+    padding-bottom: 50px;
+  }
+} /* Fechamento correto */
+
+
