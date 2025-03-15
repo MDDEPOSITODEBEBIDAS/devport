@@ -1,4 +1,4 @@
-*{  font-family: 'Perfectly Vintages', sans-serif;
+*{  font-family: 'Novecentosanswide-Norma', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1050,7 +1050,7 @@ header{
 
 
 .puta{
-  font-size: 11px;
+  font-size: 6px !important;
   display: flex;
   flex-direction: row;
   gap: 90px;
